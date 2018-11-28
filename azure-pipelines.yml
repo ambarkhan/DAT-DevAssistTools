@@ -12,7 +12,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: choco install googlechrome
+- script: choco upgrade googlechrome --ignore-checksums
 - task: NuGetToolInstaller@0
 
 - task: NuGetCommand@2
